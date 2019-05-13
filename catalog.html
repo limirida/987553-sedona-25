@@ -8,7 +8,7 @@
 	<body>
 		<header>
 			<a class="header-logo" href="index.html">
-				<img src="#" width="140px" height="71px" alt="логотип Седоны">
+				<img src="#" width="140" height="71" alt="логотип Седоны">
 			</a>
 			<nav class="navigation">
 				<ul class="site-navigation">
@@ -24,24 +24,20 @@
 				<!--фильтры-->
 			</setion>
 			<section class="sort">
-				<div class="sorting">
+				<form class="sorting">
   					<div class="sorting-left">
-     					<p class="sorting-results">
-       						Найдено:3
-    					</p>
+     					<p class="sorting-results">Найдено:3</p>
     					<div class="sorting-options">
-      						<p class="sorting-options-fiter">
-        						Сортировка:
-      						</p>
+      						<p class="sorting-options-fiter">Сортировка:</p>
       						<ul class="sorting-options-category">
+      						<li class="sorting-options-category-item">
+        						<input type="button" value="По цене">
+        					</li>
         						<li class="sorting-options-category-item">
-          							<a href="#">По цене</a>
+         							 <input type="button" value="По типу">
         						</li>
         						<li class="sorting-options-category-item">
-         							 <a href="#">По типу</a>
-        						</li>
-        						<li class="sorting-options-category-item">
-          							<a href="#">По рейтингу</a>
+          							<input type="button" value="По рейтингу">
         						</li>
      						</ul>
     					</div>
@@ -50,108 +46,101 @@
      					<div class="category sorting-order__item--up"></div>
      					<div class="category sorting-order__item--down"></div>
   					</div>
-				</div>
+				</form>
 			</section>
-			<section class="results">
-				<div class="resulrs-hotel">
-					<div class="results-hotel-information">
-						<div class="more-hotel-information">
-							<a class="photo-hotel">
-			 					<img src="#"  width="135" height="90" alt="amara resort">
-							</a>
-							<div class="info-hotel">
-								<span class="name-hotel">Amara Resort & Spa</span>
-			 					<div class="more-info-hotel">
-			 						<p class="type-hotel">
-				 						Гостиница
-				 					</p>
-				 					<p class="price-hotel">
-				 						От 4000 Р.
-									</p>
-								</div>
-								<div class="book-hotel">
-				 					<input class="details" type="button" value="Подробнее">
-				 					<input class="book" type="button" value="Забронировать">
-								</div>
+			<div class="results">
+				<div class="results_item">
+					<div class="results_item-info">
+						<div class="results_item-photo">
+			 				<img src="#"  width="135" height="90" alt="amara resort">
+			 			</div>
+						<div class="results_item-about">
+							<a href="" class="results_item-name">Amara Resort & Spa</a>
+			 				<div class="results_item-type">
+			 				<p class="results_type-type">Гостиница</p>
+				 			<p class="resuts_item-low-price">От 4000 Р.</p>
 							</div>
-						</div>
-						<div class="top-hotels">
-							<div class="rating">
-						 		<b>Рейтинг:8,5</b>
-							</div>
-							<div class="rating-stars">
-								<img src="#" width="18" height="17" alt="rating-srar">
+							<div class="results_item-action">
+				 				<a href="#" class="results_item-action_more-info">Подробнее</a>
+				 				<a href="#" class="results_item-action_book">Забронировать</a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="resulrs-hotel">
-					<div class="results-hotel-information">
-						<div class="more-hotel-information">
-							<a class="photo-hotel">
-								<img src="#"  width="135" height="90" alt="amara resort">
-							</a>
-							<div class="info-hotel">
-				 				<span class="name-hotel">Desert Quail Inn</span>
-				 				<div class="more-info-hotel">
-									<p class="type-hotel">
-										Мотель
-									</p>
-									<p class="price-hotel">
-										От 3000 Р.
-									</p>
-								</div>
-								<div class="book-hotel">
-									<input class="details" type="button" value="Подробнее">
-				 					<input class="book" type="button" value="Забронировать">
-				 				</div>
-							</div>
+					<div class="results_item-rating">
+						<div class="results_item-ratingstars">
+							<img src="#" width="18" height="17" alt="rating-srar">
+							<img src="#" width="18" height="17" alt="rating-srar">
+							<img src="#" width="18" height="17" alt="rating-srar">
+							<img src="#" width="18" height="17" alt="rating-srar">
 						</div>
-						<div class="top-hotels">
-							<div class="rating">
-								<b>Рейтинг:8,9</b>
-							</div>
-							<div class="rating-stars">
-								<img src="#" width="18" height="17" alt="rating-srar">
-							</div>
+						<div class="results_item-rating-numbers">
+							<a class ="results_item-rating-numbers"href="#">Рейтинг:8,5</a>
 						</div>
 					</div>
 				</div>
-				<div class="resulrs-hotel">
-					<div class="results-hotel-information">
-						<div class="more-hotel-information">
-							<a class="photo-hotel">
-			 					<img src="#"  width="135" height="90" alt="amara resort"> 
-			 				</a>
-			 				<div class="info-hotel">
-								<span class="name-hotel">Villas at Poco Diablo</span>
-								<div class="results-info">
-			 						<p class="type-hotel">
-										Апартаменты
-									</p>
-									<p class="price-hotel">
-										От 2000 Р.
-									</p>
-								</div>
-								<div class="book-hotel">
-									<input class="details" type="button" value="Подробнее">
-				 					<input class="book" type="button" value="Забронировать">
-				 				</div>
-							</div>
+			</div>
+			<div class="results">
+				<div class="results_item">
+					<div class="results_item-info">
+						<div class="results_item-photo">
+							<img src="#" width="135" height="90" alt="amara resort">
 						</div>
-						<div class="top-hotels">
-							<div class="rating">
-			        			<b>Рейтинг:9,2</b>
-			   				</div>
+						<div class="results_item-about">
+				 			<a href="results_item-name">Desert Quail Inn</a>
+				 			<div class="results_item-type">
+								<p class="results_item-type">Мотель</p>
+								<p class="results_item-low-price">От 3000 Р.</p>
+							</div>
+							<div class="book-hotel">
+								<a href="#" class="results_item-action_more-info">Подробнее</a>
+				 				<a href="#" class="results_item-action_book">Забронировать</a>
+				 			</div>
+						</div>
+					</div>
+					<div class="results_item-rating">
+						<div class="results_item-rating-stars">
+							<img src="#" width="18" height="17" alt="rating-srar">
+							<img src="#" width="18" height="17" alt="rating-srar">
+							<img src="#" width="18" height="17" alt="rating-srar">
+						</div>
+						<div class="results_item-rating-numers">
+							<a class="results_item-rating-numbers" href="#">Рейтинг:8,9</a>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+			<div class="results">
+				<div class="results_item">
+					<div class="results_item-info">
+						<div class="results_item-photo">
+			 				<img src="#" width="135" height="90" alt="amara resort"> 
+			 			</div>
+			 			<div class="results_item-about">
+							<a href="#" class="results_item-about">Villas at Poco Diablo</a>
+							<div class="results_item-type">
+			 					<p class="type-hotel">Апартаменты</p>
+			 					<p class="price-hotel">От 2000 Р.</p>
+							</div>
+							<div class="result_item-action">
+								<a href="#" class="results_item-action_more-info">Подробнее</a>
+				 				<a href="#" class="results_item-action_book">Забронировать</a>
+				 			</div>
+						</div>
+					</div>
+					<div class="results_item-rating">
+						<div class="results_item-rating-stars">
+							<img src="#" width="18" height="17" alt="rating-srar">
+							<img src="#" width="18" height="17" alt="rating-srar">
+						</div>
+						<div class="results_item-raying-numbers">
+			        		<a class ="results_item-rating-numbers"href="#">Рейтинг:9,2</a>
+			   			</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
-			<div class="footer-info">
-				<a class="info-insta" href="https://www.instagram.com/visitsedona/">#visitsedona</a>
-			</div>
+			<a class="info-insta" href="https://www.instagram.com/visitsedona/">#visitsedona</a>
 			<div class="footer-social">
         		<ul>
           			<li><a class="social-button" href="#">Твиттер</a></li>
@@ -159,10 +148,9 @@
           			<li><a class="social-button" href="#">Ютуб</a></li>
         		</ul>
       		</div>
-      		<div class="footer-copyright">
-      		<p>Websity by</p>
       		<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-      			<img src="#"  width="115" height="41" alt="HTML Academy">
+      			Websity by
+      			<img src="#" width="115" height="41" alt="HTML Academy">
       		</a>
 		</footer>
 	</body>
