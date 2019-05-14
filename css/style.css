@@ -1,0 +1,35 @@
+.header-logo {
+  width: 140px;
+  height: 71px;
+  object-fit: contain;
+}
+.welcom {
+	background-image: url("background-photo.jpeg")
+}
+.welcome-sedona {
+  width: 459px;
+  height: 353px;
+  object-fit: contain;
+}
+  .main-reasons-item {
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+}
+.advantages-item__icon-photo {
+  object-fit: contain;
+}
+ .copyright-logo {
+  width: 115px;
+  height: 41px;
+  object-fit: contain;
+ 
+}
+.results__item-photo {
+  object-fit: contain;
+}
