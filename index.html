@@ -13,10 +13,10 @@
 		</a>
 		<nav class="navigation">
 			<ul class="site-navigation">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видио</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li class="site-navigation__left"><a href="#">Информация</a></li>
+				<li class="site-navigation__left"><a href="#">Фото и Видио</a></li>
+				<li class="site-navigation__right"><a href="#">Карта штата</a></li>
+				<li class="site-navigation__right"><a href="#">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -85,6 +85,17 @@
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<form>Поиск гостиницы в седоне</form>
+			<h2>Поиск гостиницы в седоне</h2>
+			<form action="#" method="post">
+      			<label class="date" for="date__arrival">Дата заезда</label>
+      			<input type="date" name="date-arrival" id="date__arrival">
+      			<input class="date" type="date" name="date-departure" id="date__departure">
+      			<label for="adults">Взрослые:</label>
+      			<input type="number" name="adults" id="adults">
+      			<label for="children">Дети:</label>
+      			<input type="number" name="children" id="children">
+      			<input type="submit" value="Найти">
+      		</form>
 		</section>
 	</main>
 	<footer>
