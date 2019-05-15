@@ -21,7 +21,15 @@
 		</header>
 		<main>
 			<section class="filter">
-				<!--фильтры-->
+				<form class="filter__option">
+					<h4>Инфраструктура:</h4>
+					<ul class="infrastructure">
+					<li><input type="checkbox" name="pool" id="pool" checked>
+					<label for="pool">Бассейн</label></li>
+					<li><input type="checkbox" name="parking" id="parking">
+					<label for="parcing">Парковка</label></li>
+					</ul>
+			    </form>
 			</setion>
 			<section class="sort">
 				<form class="sorting">
@@ -43,8 +51,8 @@
     					</div>
   					</div>
   					<div class="sorting-order">
-     					<button><img class="sorting-order__up" src="img/svg-sedona/icon-up-dir.svg" width="11" height="10" alt="верх"></button>
-     					<button><img class="sorting-order__down" src="img/svg-sedona/icon-down-dir.svg" width="11" height="10" alt="низ"></button>
+     					<input type="image" class="sorting-order__up"  name="up" src="img/svg-sedona/icon-up-dir.svg" width="11" height="10" alt="верх">
+     					<input type="image" class="sorting-order__down"name="down" src="img/svg-sedona/icon-down-dir.svg" width="11" height="10" alt="вниз">
   					</div>
 				</form>
 			</section>
