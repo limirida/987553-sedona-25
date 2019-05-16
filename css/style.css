@@ -1,0 +1,33 @@
+header {
+	width: 956px;
+	height: 56px;
+	background: white;
+	background-image: url("img/jpeg/icon-back-white-mini") repeat;
+}
+
+.header-logo {
+  width: 140px;
+  height: 71px;
+}
+.welcom {
+	background-image: url("img/jpeg/background-photo.jpeg");
+}
+.welcome-sedona {
+  width: 459px;
+  height: 353px;
+}
+  .main-reasons-item {
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+}
+ .copyright-logo {
+  width: 115px;
+  height: 41px;
+}
