@@ -8,15 +8,15 @@
 </head>
  <body>
 	<header>
-		<a class="header-logo" href="index.html">
+		<a class="header-logo" href="index.html" aria-lable="перейти на главную страницу сайта">
 			<img src="img/svg-sedona/logo-sedona.svg" width="140" height="71" alt="логотип Седоны">
 		</a>
-		<nav class="navigation">
-			<ul class="site-navigation">
-				<li class="site-navigation__left"><a href="#">Информация</a></li>
-				<li class="site-navigation__left"><a href="#">Фото и Видио</a></li>
-				<li class="site-navigation__right"><a href="#">Карта штата</a></li>
-				<li class="site-navigation__right"><a href="#">Гостиницы</a></li>
+		<nav>
+			<ul class="navigation">
+				<li class="navigation__left"><a href="#" aria-lable="перейти к информации">Информация</a></li>
+				<li class="navigation__left"><a href="#" aria-lable="перейти в фото и видио">Фото и Видио</a></li>
+				<li class="navigation__right"><a href="#" aria-lable="перейти к карте штата">Карта штата</a></li>
+				<li class="navigation__right"><a href="#" aria-lable="перейти в список гостиниц">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -83,29 +83,35 @@
 		</section>
 		<section class="offer">
 			<h2>Заинтересовались?</h2>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<form>Поиск гостиницы в седоне</form>
-			<h2>Поиск гостиницы в седоне</h2>
+			<p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<form action="#" method="post">
-      			<label class="date" for="date__arrival">Дата заезда</label>
-      			<input type="date" name="date-arrival" id="date__arrival">
-      			<input class="date" type="date" name="date-departure" id="date__departure">
-      			<label for="adults">Взрослые:</label>
-      			<input type="number" name="adults" id="adults">
-      			<label for="children">Дети:</label>
-      			<input type="number" name="children" id="children">
-      			<input type="submit" value="Найти">
+				<fieldset class="search-hotel">
+					<div class="search-hotel__item">
+						<legend class="search-hotel">Поиск гостиницы в седоне</legend>
+      					<label for="date__arrival">Дата заезда</label>
+      					<input type="text" name="date-arrival" id="date__arrival" value="24 апреля 2017" class="date"><img src="img/svg-sedona/calendar.svg" width="21" height="22"class="calendar" alt="Календарь">
+      					<label type="date" for="date__departure">Дата выезда</label>
+      					<input type="text" name="date-departure" id="date__departure" value="4 июля 2017" class="date"><img src="img/svg-sedona/calendar.svg" width="21" height="22" class="calendar" alt="Календарь">
+      					<label for="adults">Взрослые:</label>
+      					<input type="number" name="adults" id="adults">
+      					<label for="children">Дети:</label>
+      					<input type="number" name="children" id="children">
+      					<div class="buttons">
+      						<input type="submit" value="Найти" aria-label="Найти гостиницу">
+      					</div>
+      				</div>
+      			</fieldset>
       		</form>
 		</section>
 	</main>
 	<footer>
-		<a class="info-insta" href="https://www.instagram.com/visitsedona/">#visitsedona</a>
+		<a class="info-insta" href="https://www.instagram.com/visitsedona/" aria-label="Седона в инстаграмме" lang="en">#visitsedona</a>
         <ul class="footer-social">
-          	<li><a href="#" class="social-button"><button class="social-button" a href="#"><img class="social-button__icon" src="img/svg-sedona/twitter.svg" width="17" height="15" alt="Твиттер"></button></a></li>
-          	<li><a href="#" class="social-button"><button class="social-button" a href="#"><img src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="Фейсбук"></button></a></li>
-          	<li><a href="#" class="social-button"><button class="social-button" a href="#"><img src="img/svg-sedona/youtube.svg" width="20" height="16" alt="Ютуб"></button></a></li>
+          	<li><a class="social-button" a href="https://twitter.com/sedona" aria-label="Седона в твиттере"><img class="social-button__icon" src="img/svg-sedona/twitter.svg" width="17" height="15" alt="Твиттер"></a>
+          	<li><a class="social-button" a href="https://www.facebook.com/VisitSedona/" aria-label="Седона в фейсбуке"><img src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+          	<li><a class="social-button" a href="https://www.youtube.com/channel/UC7kEZOgVksv4yH7hQfr-PAA" aria-label="Седона в ютубе"><img src="img/svg-sedona/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
         </ul>
-      	<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+      	<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" lang="en" aria-label="Перейти на сайт HTML Academy">
       		Websity by
       		<img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
       	</a>
