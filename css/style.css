@@ -31,3 +31,9 @@ h3 {
   width: 115px;
   height: 41px;
 }
+
+.social-button {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
