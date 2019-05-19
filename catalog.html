@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	<title>Sedona</title>
 </head>
@@ -13,10 +14,10 @@
 			</a>
 			<nav>
 				<ul class="navigation">
-					<li class="navigation__left"><a href="#" aria-lable="перейти к информации">Информация</a></li>
-					<li class="navigation__left"><a href="#" aria-lable="перейти в фото и видио">Фото и Видио</a></li>
-					<li class="navigation__right"><a href="#" aria-lable="перейти к карте штата">Карта штата</a></li>
-					<li class="navigation__right"><a href="#" aria-lable="перейти в список гостиниц">Гостиницы</a></li>
+					<li class="navigation__item--left"><a href="#" aria-label="перейти к информации">Информация</a></li>
+					<li class="navigation__item--left"><a href="#" aria-label="перейти в фото и видио">Фото и Видио</a></li>
+					<li class="navigation__item--right"><a href="#" aria-label="перейти к карте штата">Карта штата</a></li>
+					<li class="navigation__item--right"><a href="#" aria-label="перейти в список гостиниц">Гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -28,13 +29,17 @@
 						<legend>Инфраструктура:</legend>
 						<ul class="infrastructure">
 							<li>
-								<label><input type="checkbox" name="pool" checked="checked">Бассейн</label>
+								<label>
+									<input type="checkbox" name="pool" checked="checked">Бассейн
+								</label>
 							</li>
 							<li>
 								<label><input type="checkbox" name="parking">Парковка</label>
 							</li>
 							<li>
-								<label><input type="checkbox" name="Wi-Fi" id="filer-internet">Wi-Fi</label>
+								<label>
+									<input type="checkbox" name="Wi-Fi" id="filer-internet">Wi-Fi
+								</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -42,13 +47,19 @@
 						<legend>Тип жилья</legend>
 						<ul class="type-housing">
 							<li>
-								<label><input type="checkbox" name="hotel" checked="checked">Гостиница</label>
+								<label>
+									<input type="checkbox" name="hotel" checked="checked">Гостиница
+								</label>
 							</li>
 							<li>
-								<label><input type="checkbox" name="motel" checked="checked">Мотель</label>
+								<label>
+									<input type="checkbox" name="motel" checked="checked">Мотель
+								</label>
 							</li>
 							<li>
-								<label><input type="checkbox" name="apartments" checked="checked">Aпартаменты</label>
+								<label>
+									<input type="checkbox" name="apartments" checked="checked">Aпартаменты
+								</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -60,23 +71,23 @@
 			    </form>
 			</section>
 			<section class="hotels"> 
-  				<div class="sorting-left">
+  				<form class="sorting-left">
      				<p class="sorting-results">Найдено:3</p>
     				<div class="sorting-options">
       					<p class="sorting-options-fiter">Сортировка:</p>
       					<ul class="sorting-options__category">
       						<li class="sorting-options__category-item">
-        						<a href="#" aria-lable="Сортировка по цене">По цене</a>
+        						<a href="#" aria-label="Сортировка по цене">По цене</a>
         					</li>
         					<li class="sorting-options__category-item">
-         							<a href="#" aria-lable="Сортировка по типу">По типу</a>
+         							<a href="#" aria-label="Сортировка по типу">По типу</a>
         					</li>
         					<li class="sorting-options__category-item">
-          						<a href="#" aria-lable="Сортировка по рейтингу">По рейтингу</a>
+          						<a href="#" aria-label="Сортировка по рейтингу">По рейтингу</a>
         					</li>
      					</ul>
     				</div>
-  				</div>
+  				</form>
   				<div class="sorting-order">
      				<a  href="#" class="sorting-order__up"  name="up"><img src="img/svg-sedona/icon-up-dir.svg" width="11" height="10" alt="верх"></a>
      				<a href="#" class="sorting-order__down" name="down"><img src="img/svg-sedona/icon-down-dir.svg" width="11" height="10" alt="вниз"></a>
@@ -175,13 +186,24 @@
 			</div>
 		</main>
 		<footer>
-		<a class="info-insta" href="https://www.instagram.com/visitsedona/" aria-label="Седона в инстаграмме" lang="en">#visitsedona</a>
+		<a class="info-insta" href="https://www.instagram.com/visitsedona/" target="_blank" aria-label="Седона в инстаграмме" lang="en">#visitsedona</a>
         <ul class="footer-social">
-          	<li><a class="social-button" a href="https://twitter.com/sedona" aria-label="Седона в твиттере"><img class="social-button__icon" src="img/svg-sedona/twitter.svg" width="17" height="15" alt="Твиттер"></a>
-          	<li><a class="social-button" a href="https://www.facebook.com/VisitSedona/" aria-label="Седона в фейсбуке"><img src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-          	<li><a class="social-button" a href="https://www.youtube.com/channel/UC7kEZOgVksv4yH7hQfr-PAA" aria-label="Седона в ютубе"><img src="img/svg-sedona/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
+          	<li>
+          		<a class="social-button" href="https://twitter.com/sedona"  target="_blank" aria-label="Седона в твиттере">
+          			<img class="social-button__icon" src="img/svg-sedona/twitter.svg" width="17" height="15" alt="Твиттер">
+          		</a>
+          	<li>
+          		<a class="social-button" a href="https://www.facebook.com/VisitSedona/" target="_blank" aria-label="Седона в фейсбуке">
+          			<img src="img/svg-sedona/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+          		</a>
+          	</li>
+          	<li>
+          		<a class="social-button" a href="https://www.youtube.com/channel/UC7kEZOgVksv4yH7hQfr-PAA" target="_blank" aria-label="Седона в ютубе">
+          			<img src="img/svg-sedona/youtube.svg" width="20" height="16" alt="Ютуб">
+          		</a>
+          	</li>
         </ul>
-      	<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" lang="en" aria-label="Перейти на сайт HTML Academy">
+      	<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" lang="en" aria-label="Перейти на сайт HTML Academy">
       		Websity by
       		<img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
       	</a>
