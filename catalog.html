@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	<title>Sedona</title>
 </head>
@@ -12,12 +12,20 @@
 			<a class="header-logo" href="index.html">
 				<img src="img/svg-sedona/logo-sedona.svg" width="140" height="71" alt="логотип Седоны">
 			</a>
-			<nav>
-				<ul class="navigation">
-					<li class="navigation__item--left"><a href="#" aria-label="перейти к информации">Информация</a></li>
-					<li class="navigation__item--left"><a href="#" aria-label="перейти в фото и видио">Фото и Видио</a></li>
-					<li class="navigation__item--right"><a href="#" aria-label="перейти к карте штата">Карта штата</a></li>
-					<li class="navigation__item--right"><a href="#" aria-label="перейти в список гостиниц">Гостиницы</a></li>
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__list-item navigation__list-item--left">
+						<a href="#" aria-label="перейти к информации">Информация</a>
+					</li>
+					<li class="navigation__list-item navigation__list-item--left">
+						<a href="#" aria-label="перейти в фото и видио">Фото и Видио</a>
+					</li>
+					<li class="navigation__list-item navigation__list-item--right">
+						<a href="#" aria-label="перейти к карте штата">Карта штата</a>
+					</li>
+					<li class="navigation__list-item navigation__list-item--right">
+						<a href="#" aria-label="перейти в список гостиниц">Гостиницы</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -71,26 +79,36 @@
 			    </form>
 			</section>
 			<section class="hotels"> 
-  				<form class="sorting-left">
-     				<p class="sorting-results">Найдено:3</p>
-    				<div class="sorting-options">
-      					<p class="sorting-options-fiter">Сортировка:</p>
-      					<ul class="sorting-options__category">
-      						<li class="sorting-options__category-item">
-        						<a href="#" aria-label="Сортировка по цене">По цене</a>
-        					</li>
-        					<li class="sorting-options__category-item">
-         							<a href="#" aria-label="Сортировка по типу">По типу</a>
-        					</li>
-        					<li class="sorting-options__category-item">
-          						<a href="#" aria-label="Сортировка по рейтингу">По рейтингу</a>
-        					</li>
-     					</ul>
+  				<div class="sorting">
+  					<div class="sorting-left">
+     					<p class="sorting-title">
+       						Найдено
+    					</p>
+    					<div class="sorting-options">
+      						<p class="sorting-options__title">
+        						Сортировка:
+      						</p>
+      						<ul class="sorting-options__list">
+        						<li class="sorting-options__list-item">
+          						<a href="">По цене</a>
+        						</li>
+        						<li class="sorting-options__list-item">
+          						<a href="">По типу</a>
+        						</li>
+        						<li class="sorting-options__list-item">
+          						<a href="">По рейтингу</a>
+        						</li>
+      						</ul>
+    					</div>
     				</div>
-  				</form>
-  				<div class="sorting-order">
-     				<a  href="#" class="sorting-order__up"  name="up"><img src="img/svg-sedona/icon-up-dir.svg" width="11" height="10" alt="верх"></a>
-     				<a href="#" class="sorting-order__down" name="down"><img src="img/svg-sedona/icon-down-dir.svg" width="11" height="10" alt="вниз"></a>
+  					<div class="sorting-order">
+     					<a  href="#" class="sorting-order__up"  name="up">
+     						<img src="img/svg-sedona/icon-up-dir.svg" width="11" height="10" alt="верх">
+     					</a>
+     					<a href="#" class="sorting-order__down" name="down">
+     						<img src="img/svg-sedona/icon-down-dir.svg" width="11" height="10" alt="вниз">
+     					</a>
+  					</div>
   				</div>
 			</section>
 			<div class="results">
