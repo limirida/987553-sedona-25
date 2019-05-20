@@ -9,6 +9,7 @@ header {
 	width: 956px;
 	height: 56px;
 	background: white;
+  align-items: center;
 }
 
 .header-logo {
@@ -36,7 +37,7 @@ header {
   height: 41px;
 }
 
-a.social-button {
+.social-button {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
@@ -82,4 +83,39 @@ fieldset {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.sorting-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sorting-title {
+  margin-right: 10px;
+}
+
+.sorting-options {
+  display: flex;
+}
+
+.sorting-options__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.sorting-options__list-item {
+  margin-right: 10px;
+}
+
+.sorting-order {
+  display: flex;
+  align-items: center;
 }
