@@ -8,10 +8,6 @@ body {
   line-height: 26px;
 }
 
-.body-catalog{
-  background-color: #ffffff;
-}
-
 a {
   text-decoration: none;
 }
@@ -45,6 +41,7 @@ a {
 }
 
 .header-logo {
+  margin: 0 auto;
   text-align: center;
 }
 
