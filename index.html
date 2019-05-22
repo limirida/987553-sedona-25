@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sedona</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css"/>
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
-	<title>Sedona</title>
 </head>
  <body>
 	<header>
@@ -34,15 +35,15 @@
 			<img class="welcom-sedona" src="img/svg-sedona/intro-welcome.svg" width="459" height="357" alt="welcom to sedona">
 		</div>
 		<section class="content">
-			<h3>Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
-			<h4>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h4>
+			<h3 class="content-info">Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
+			<h4 class="content-info__item">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h4>
 			<div class="reason-list">
-				<div class="main reasons">
+				<div class="main-reasons">
 					<div class="main-reasons-item">
 						<h3>Настоящий городок</h3>
 						<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 					</div>
-					<img class="main-reasons-item-photo" src="img/jpeg/feature-picture-1.jpg"  width="801" height="256" alt="photo of the house">
+					<img class="main-reasons-item-photo" src="img/jpeg/feature-picture-1.jpg"  width="800" height="256" alt="photo of the house">
 				</div>
 				<div class="advantages">
 					<div class="advantages-item">
@@ -93,19 +94,21 @@
 		<section class="offer">
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<form action="#" method="post">
+			<form  action="#" method="post">
 				<fieldset class="search-hotel">
 					<div class="search-hotel__item">
 						<legend class="search-hotel">Поиск гостиницы в седоне</legend>
-      					<label for="date__arrival">Дата заезда</label>
-      					<input type="text" name="date-arrival" id="date__arrival" value="24 апреля 2017" class="date"><img src="img/svg-sedona/calendar.svg" width="21" height="22"class="calendar" alt="Календарь">
-      					<label type="date" for="date__departure">Дата выезда</label>
-      					<input type="text" name="date-departure" id="date__departure" value="4 июля 2017" class="date"><img src="img/svg-sedona/calendar.svg" width="21" height="22" class="calendar" alt="Календарь">
-      					<label for="adults">Взрослые:</label>
-      					<input type="number" name="adults" id="adults">
-      					<label for="children">Дети:</label>
-      					<input type="number" name="children" id="children">
-      					<button class="search-hotel__find" aria-label="Найти гостиницу">Найти</button>
+						<div class="search-hotel__list">
+      						<label for="date__arrival">Дата заезда</label>
+      						<input type="text" name="date-arrival" id="date__arrival" value="24 апреля 2017" class="date"><img src="img/svg-sedona/calendar.svg" width="21" height="22"class="calendar" alt="Календарь">
+      						<label type="date" for="date__departure">Дата выезда</label>
+      						<input type="text" name="date-departure" id="date__departure" value="4 июля 2017" class="date"><img src="img/svg-sedona/calendar.svg" width="21" height="22" class="calendar" alt="Календарь">
+      						<label for="adults">Взрослые:</label>
+      						<input type="number" name="adults" id="adults">
+      						<label for="children">Дети:</label>
+      						<input type="number" name="children" id="children">
+      						<button class="search-hotel__find" aria-label="Найти гостиницу">Найти</button>
+      					</div>
       				</div>
       			</fieldset>
       		</form>
