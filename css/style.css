@@ -87,14 +87,7 @@ a {
   line-height: 14px;
 }
 
-footer,
- .copyright-logo img,
- .price-range__full,  
- .price-range__choosed,
- .results 
- .advantages,
- .offer {
-  text-align: center;
+.style {
   background-color: #ffffff;
 
 }
@@ -114,8 +107,7 @@ footer,
 } 
 
 .date {
-  width: 346px;
-  height: 38px;
+ width: 346px;
   background-color: #f2f2f2;
 }
 
@@ -142,14 +134,14 @@ footer,
   background-color: #766357;
   color: #ffffff;
 }
+
 .search-hotel__list {
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   text-align: left;
-  width: 568px;
-  height: 395px;
-  box-shadow: 0px 7px 15px 0 var(--dark-forest-green--15);
+ width: 568px;
+  box-shadow: 0px 7px 15px 0 #ffffff;
 }
 
 .search-hotel__list label {
@@ -170,8 +162,7 @@ footer,
 }
 
 .search-hotel__find {
-  width: 458px;
-  height: 58px;
+width: 458px;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -205,6 +196,11 @@ footer,
   color: #000000;
 }
 
+.offer {
+  text-align: center;
+}
+
+
 fieldset {
 	border: none;
 }
@@ -235,9 +231,8 @@ fieldset {
 }
 
 .sorting-title {
-   width: 115px;
-  height: 22px;
-  font-family: PTSans;
+   
+  width: 115px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -251,9 +246,7 @@ fieldset {
 }
 
 .sorting-options__title {
-  width: 75px;
-  height: 8px;
-  font-family: PTSans;
+ width: 75px;
   font-size: 12px;
   line-height: 18px;
   text-align: left;
@@ -306,10 +299,14 @@ fieldset {
 }
 
 .price-range__full {
+  text-align: center;
+  background-color: #ffffff;
   width: 100%;
 }
 
 .price-range__choosed {
+  text-align: center;
+  background-color: #ffffff;
   width: 200px;
 }
 
@@ -325,7 +322,6 @@ fieldset {
 
 .results h3 {
   width: 210px;
-  height: 16px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -340,7 +336,6 @@ fieldset {
 
 .results__item-name {
   width: 210px;
-  height: 16px;
   font-family: PTSans;
   font-size: 21px;
   font-weight: bold;
@@ -381,7 +376,6 @@ fieldset {
 
 .results__item-type {
   width: 52px;
-  height: 11px;
   font-family: PTSans;
   font-size: 14px;
   line-height: 21px;
@@ -398,7 +392,6 @@ fieldset {
 
 .results__item-rating-numbers a {
   width: 81px;
-  height: 16px;
   font-size: 14px;
   line-height: 21px;
   text-align: right;
@@ -407,7 +400,6 @@ fieldset {
 
 .results__item-rating-numbers{
  width: 110px;
- height: 27px;
  background-color: #f2f2f2;
  text-align: right;
 }
@@ -423,12 +415,10 @@ fieldset {
 .results__item-action__more-info {
   background-color: #81b3d2;
   width: 110px;
-  height: 27px;
 }
 
 .results__item-action__book {
   width: 142px;
-  height: 27px;
   background-color: #766357;
 }
 
@@ -441,4 +431,7 @@ fieldset {
 .search-hotel__legend:focus {
   background-color: #503e33;
   opacity: 0.3;
+}
+footer {
+  text-align: center;
 }
