@@ -34,23 +34,23 @@
 			<section class="sort">
 			 	<h1 class="visually-hidden">Параметры гостиницы</h1>
 				<form action="#" method="GET" class="filter__option">
-						<legend>Инфраструктура:</legend>
+					<legend>Инфраструктура:</legend>
 						<ul class="infrustructure-list">
 							<li class="infrustructure-list__item">
 								<label infrustructure-list__item-label>
-									<input type="checkbox" name="pool" checked="checked" class="infrustructure-list__item-label">
+									<input type="checkbox" name="pool" checked="checked" class="infrustructure-list__item-input">
 									Бассейн
 								</label>
 							</li>
 							<li class="infrustructure-list__item">
 								<label infrustructure-list__item-label>
-									<input type="checkbox" name="parking" class="infrustructure-list__item-label">
+									<input type="checkbox" name="parking" class="infrustructure-list__item-input">
 									Парковка
 								</label>
 							</li>
 							<li class="infrustructure-list__item">
 								<label infrustructure-list__item-label>
-									<input type="checkbox" name="Wi-Fi" class="infrustructure-list__item-label">
+									<input type="checkbox" name="Wi-Fi" class="infrustructure-list__item-input">
 									Wi-Fi
 								</label>
 							</li>
@@ -76,7 +76,7 @@
 								</label>
 							</li>
 						</ul>
-						<p>Стоимоcть в сутки(Р):</p>
+						<p class="day-cost__info">Стоимоcть в сутки(Р):</p>
 						<output name="day-cost"></output>
 						<div class="price-range">
   							<div class="price-range-line price-range__full"></div>
@@ -89,26 +89,25 @@
 			</section>
 			<section class="hotels"> 
   				<form action="#" method="GET"  class="sorting">
-     					<p class="sorting-title">
-       						Найдено
-    					</p>
-    					<div class="sorting-options">
-      						<p class="sorting-options__title">
-        						Сортировка:
-      						</p>
-      						<ul class="sorting-options__list">
-        						<li class="sorting-options__list-item">
-          							<button aria-label="Сортировка по цене">По цене</button>
-        						</li>
-        						<li class="sorting-options__list-item">
-          							<button aria-label="Сортировка по типу">По типу</button>
-        						</li>
-        						<li class="sorting-options__list-item">
-          							<button aria-label="Сортировка по рейтингу">По рейтингу</button>
-        						</li>
-      						</ul>
-    					</div>
-    				</form>
+     				<p class="sorting-title">
+       					Найдено
+    				</p>
+    				<div class="sorting-options">
+      					<p class="sorting-options__title">
+        					Сортировка:
+      					</p>
+      					<ul class="sorting-options__list">
+        					<li class="sorting-options__list-item">
+          						<button class="sorting-options__list-item__button" aria-label="Сортировка по цене">По цене</button>
+        					</li>
+        					<li class="sorting-options__list-item">
+          						<button class="sorting-options__list-item__button" aria-label="Сортировка по типу">По типу</button>
+        					</li>
+        					<li class="sorting-options__list-item">
+          						<button class="sorting-options__list-item__button" aria-label="Сортировка по рейтингу">По рейтингу</button>
+        					</li>
+      					</ul>
+    				</div>
   					<div class="sorting-order">
      					<button class="sorting-order__up">
      						<img src="img/svg-sedona/icon-up-dir.svg" width="11" height="10" alt="верх">
@@ -117,9 +116,9 @@
      						<img src="img/svg-sedona/icon-down-dir.svg" width="11" height="10" alt="вниз">
      					</button>
   					</div>
-  				</div>
+  				</form>
 			</section>
-			<div class="results">
+			<div class="results style">
 				<h1 class="visually-hidden">Результаты поиска</h1>
 				<div class="results__item">
 					<div class="results__item-info">
@@ -151,7 +150,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="results">
+			<div class="results style">
 				<div class="results__item">
 					<div class="results__item-info">
 						<div class="results__item-photo">
@@ -181,7 +180,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="results">
+			<div class="results style">
 				<div class="results__item">
 					<div class="results__item-info">
 						<div class="results__item-photo">
@@ -211,7 +210,7 @@
 				</div>
 			</div>
 		</main>
-		<footer>
+		<footer class="style">
 		<a class="info-insta" href="https://www.instagram.com/visitsedona/" target="_blank" aria-label="Седона в инстаграмме">#visitsedona</a>
         <ul class="social-list">
           	<li class="social-list__item">
@@ -229,7 +228,7 @@
           		</a>
           	</li>
         </ul>
-      	<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" lang="en" aria-label="Перейти на сайт HTML Academy">
+      	<a class="copyright-logo style" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" lang="en" aria-label="Перейти на сайт HTML Academy">
       		Websity by
       		<img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
       	</a>
