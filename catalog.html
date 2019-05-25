@@ -29,11 +29,13 @@
 					</li>
 				</ul>
 			</nav>
+		</div>
 		</header>
 		<main>
 			<section class="sort">
 			 	<h1 class="visually-hidden">Параметры гостиницы</h1>
 				<form action="#" method="GET" class="filter__option">
+				  <div class="sort-items">
 					<legend>Инфраструктура:</legend>
 						<ul class="infrustructure-list">
 							<li class="infrustructure-list__item">
@@ -55,6 +57,8 @@
 								</label>
 							</li>
 						</ul>
+					</div>
+					<div class="sort-items">
 						<legend>Тип жилья</legend>
 						<ul class="filter-list__item">
 							<li class="infrustructure-list__item">
@@ -76,6 +80,8 @@
 								</label>
 							</li>
 						</ul>
+					</div>
+					<div class="sort-items">
 						<p class="day-cost__info">Стоимоcть в сутки(Р):</p>
 						<output name="day-cost"></output>
 						<div class="price-range">
@@ -85,6 +91,7 @@
   							<div class="price-range__circle price-range__circle--left"></div>
 						</div>
 						<button class="price-range__item">Показать</button>
+					</div>
 			    </form>
 			</section>
 			<section class="hotels"> 
@@ -137,8 +144,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="results__item-rating-stars">
-						<div class="results_item-ratingstars">
+					<div class="results__item-rating">
+						<div class="results_item-rating-stars">
 							<img src="img/svg-sedona/star.svg" width="18" height="17" alt="rating-star">
 							<img src="img/svg-sedona/star.svg" width="18" height="17" alt="rating-star">
 							<img src="img/svg-sedona/star.svg" width="18" height="17" alt="rating-star">
@@ -190,7 +197,7 @@
 							<a href="#" class="results__item-name" aria-label="Гостиница" lang="en">Villas at Poco Diablo</a>
 							<div class="results__item-type">
 			 					<p class="results__item-type">Апартаменты</p>
-			 					<p class="presults__item-low-price">От 2000 Р.</p>
+			 					<p class="resuts__item-low-price">От 2000 Р.</p>
 							</div>
 							<div class="result_item-action">
 								<a href="#" class="results__item-action__more-info" aria-label="Подробнее о гостинице">Подробнее</a>
