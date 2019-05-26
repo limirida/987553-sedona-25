@@ -1,27 +1,32 @@
 body {
   background-color: #f2f2f2;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family:'PT Sans', sans-serif;
   text-transform: uppercase;
-  color:#000000;
-  line-height: 26px;
+}
+
+@font-face {
+  font-style: 'PT Sans';
+  src: url('/fonts/PT_Sans-Web-Regular.ttf')format('truetype');
 }
 
 a {
   text-decoration: none;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.container {
+  max-width: 1200px;
+  margin:0 auto;
+  background-color: #f2f2f2;
 }
 
-.header-navigation {
+header {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -33,9 +38,8 @@ header {
 
 .navigation__list {
   list-style: none;
-  max-height: 56px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .navigation__list-item {
@@ -43,7 +47,6 @@ header {
   margin:auto;
   white-space: nowrap;
 }
-
 
 .navigation__list a:hover {
   color: #81b3d2;
@@ -65,12 +68,21 @@ header {
   width: 244px;
   text-align: center;
   margin: 0 auto;
+  position: relative;
+  left:50%;
+
+}
+.exmpl {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.welcom {
-	background-image: url("img/jpeg/background-photo.jpg");
-  background-color: #81b3d2;
-  background-repeat: no-repeat;
+.welcom { 
+  background-image: url("C:/Users/Alex/Documents/987553-sedona-25/img/jpeg/background-photo.jpg");
+  background-position: center;
 }
 
 .content {
@@ -109,11 +121,18 @@ header {
   line-height: 21px;
 }
 
-.main-reasons-item p {
-  line-height: 14px;
+.main-reasons-item .add-info {
+  color:white;
 }
 
-.style {
+.add-info {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #333333;
+}
+
+.white-background {
   background-color: #ffffff;
 }
 
@@ -136,24 +155,60 @@ header {
   background-color: #eeeeee;
 }
 
-
-
-.offer-search {
+.form-back {
   text-align: center;
-  background-image: url("img/jpeg/map.jpg") 0 0 no-repeat;
+  margin:0px 316px;
+  background-image: url("C:/Users/Alex/Documents/987553-sedona-25/img/jpeg/map.jpg");
+  background-position: center;
+}
+
+.form__item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 22px;
+}
+
+.form__item input {
+  width: 346px;
+  background-color: #f2f2f2;
+  display: block;
+}
+
+.form__item::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 22px;
+  background: url("C:/Users/Alex/Documents/987553-sedona-25/img/svg-sedona/calendar.svg");
+  left: 100%;
+  top: 2px;
+}
+  
+.offer-search {
+  margin: 0 auto;
+  text-align: left;
   background-color: #ebebeb;
+  max-width: 400px;
+  padding: 20px;
 } 
+.form-other {
+ margin-left: 55px;
+}
 
 .date {
  width: 346px;
   background-color: #f2f2f2;
 }
 
-
 .socila-list__item-link {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  margin:2px;
 }
 
  .copyright-logo {
@@ -171,6 +226,13 @@ header {
 .search-hotel legend {
   background-color: #766357;
   color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  padding:35px 140px;
+  margin: 0 auto;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .search-hotel__list {
@@ -178,7 +240,8 @@ header {
   font-weight: bold;
   line-height: 26px;
   text-align: left;
- width: 568px;
+  width: 568px;
+  margin: auto;
   box-shadow: 0px 7px 15px 0 #ffffff;
 }
 
@@ -190,9 +253,8 @@ header {
 }
 
 .search-hotel__item {
-  width: 568px;
-  height: 86px;
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+ width: 568px;
+ box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .date {
@@ -200,9 +262,14 @@ header {
 }
 
 .search-hotel__find {
-width: 458px;
+  width: 458px;
+  text-align: center;
   background-color: #81b3d2;
   color: #ffffff;
+  margin: 55px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24
 }
 
 .calendar  {
@@ -261,9 +328,9 @@ width: 458px;
 }
 
 fieldset {
-  min-height: 120px;
-	border: none;
+ border: none;
 }
+
 .filter__option {
   display: flex;
   justify-content: space-around;
@@ -304,7 +371,6 @@ fieldset {
 }
 
 .sorting-title {
-   
   width: 115px;
   font-size: 21px;
   font-weight: bold;
@@ -384,8 +450,8 @@ fieldset {
 }
 
 .sort {
-  background-image: url("img/jpeg/filter-background.jpg") 0 0 no-repeat;
-  background-color: #81b3d2;
+  background-image: url("C:/Users/Alex/Documents/987553-sedona-25/img/jpeg/filter-background.jpg");
+  background-position: center;
   color: #ffffff;
 }
 
@@ -396,7 +462,6 @@ fieldset {
 .price-range__item {
   margin: 34px;
   width: 133px;
-  height: 32px;
   border: solid 2px #ffffff;
 }
 
@@ -423,6 +488,7 @@ fieldset {
  display: flex;
 }
 .results__item-about {
+  width: 317px;
   padding-left: 30px;
 }
 
@@ -472,10 +538,11 @@ fieldset {
 
 .results__item-type {
   width: 52px;
-  font-family: PTSans;
+  text-align: center;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  white-space: nowrap;
 }
 
 .results__item-type {
@@ -487,8 +554,8 @@ fieldset {
 }
 
 .results__item-rating {
-  text-align: center;
-  margin-left: 554px;
+  text-align: right;
+  padding-right: 86px;
   margin-top: 29px;
 }   
 
@@ -514,7 +581,14 @@ fieldset {
   margin-top: 47px;
   margin-bottom: 30px;
 }
+
 .result_item-action a {
+  width: 76px;
+  padding: 8px 17px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
   color: #ffffff;
 }
 
@@ -547,4 +621,23 @@ footer {
 
 .social-list__item {
   display: flex;
+  flex-direction: column;
+}
+.socila-list__item-link--twitter {
+  background-image: url("C:/Users/Alex/Documents/987553-sedona-25/img/svg-sedona/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 15px;
+  background-position: center;
+}
+.socila-list__item-link--facebook {
+  background-image: url("C:/Users/Alex/Documents/987553-sedona-25/img/svg-sedona/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 22px;
+  background-position: center;
+}
+.socila-list__item-link--youtube {
+  background-image: url("C:/Users/Alex/Documents/987553-sedona-25/img/svg-sedona/youtube.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: center;
 }
