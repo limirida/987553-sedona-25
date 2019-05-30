@@ -80,23 +80,27 @@
 								</li>
 							</ul>
 						</div>
-						<div class="sort-items">
-							<p class="day-cost__info">Стоимоcть в сутки(Р):</p>
-							<output name="day-cost"></output>
-							<div class="price-range">
-	  							<div class="price-range-line price-range__full"></div>
-	  							<div class="price-range-line price-range__choosed"></div>
-	  							<div class="price-range__circle"></div>
-	  							<div class="price-range__circle price-range__circle--left"></div>
-							</div>
-							<button class="price-range__item">Показать</button>
-						</div>
+						<div class="filter-range">
+					      <div class="filter-range-title">Стоимость в сутки (р):</div>
+					      <div class="price-controls">
+					        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+					        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+					      </div>
+					      <div class="range-controls">
+					        <div class="scale">
+					          <div class="bar"></div>
+					        </div>
+					        <div class="range-toggle range-toggle-min"></div>
+					        <div class="range-toggle range-toggle-max"></div>
+					      </div>
+					      <button class="btn-transparent" type="submit">Показать</button>
+					    </div>
 				    </form>
 				</section>
 				<section class="hotels"> 
 	  				<form action="#" method="GET" class="sorting">
 	     				<p class="sorting-title">
-	       					Найдено
+	       					Найдено:3
 	    				</p>
 	    				<div class="sorting-options">
 	      					<p class="sorting-options__title">
@@ -134,8 +138,8 @@
 							<div class="results__item-about">
 								<a href="#" class="results__item-name" aria-label="Гостиница" lang="en">Amara Resort & Spa</a>
 				 				<div class="results__item-type">
-				 				<p class="results__type-type">Гостиница</p>
-					 			<p class="resuts__item-low-price">От 4000 Р.</p>
+					 				<p class="results__type-apartment">Гостиница</p>
+						 			<p class="resuts__item-low-price">От 4000 Р.</p>
 								</div>
 								<div class="result_item-action">
 					 				<a href="#" class="results__item-action__more-info" aria-label="Подробнее о гостинице">Подробнее</a>
@@ -165,7 +169,7 @@
 							<div class="results__item-about">
 					 			<a href="#" class="results__item-name" aria-label="Гостиница" lang="en">Desert Quail Inn</a>
 					 			<div class="results__item-type">
-									<p class="results__item-type">Мотель</p>
+									<p class="results__type-apartment">Мотель</p>
 									<p class="results__item-low-price">От 3000 Р.</p>
 								</div>
 								<div class="result_item-action">
@@ -195,7 +199,7 @@
 				 			<div class="results__item-about">
 								<a href="#" class="results__item-name" aria-label="Гостиница" lang="en">Villas at Poco Diablo</a>
 								<div class="results__item-type">
-				 					<p class="results__item-type">Апартаменты</p>
+				 					<p class="results__type-apartment">Апартаменты</p>
 				 					<p class="resuts__item-low-price">От 2000 Р.</p>
 								</div>
 								<div class="result_item-action">
