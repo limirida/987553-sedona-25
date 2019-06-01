@@ -424,77 +424,74 @@ fieldset {
   white-space: nowrap;
 }
 .hotels {
- width: 554px;
- margin-left: 72px;
+ width: 1200px;
  text-align: center;
  vertical-align: bottom;
-}
-.sorting-order {
-  margin-left: 515px;
+ background-color: #ffffff;
+ color: #000000;
 }
 
 .sorting {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  max-width: 1000px;
-  margin: 0px auto;
+  max-width: 1200px;
   align-items: center;
 }
 
 .sorting-left {
+  width: 514px;
   display: flex;
   justify-content: flex-start;
+  margin-left: 72px;
+  align-items: center;
 }
 
 .sorting-title {
   width: 115px;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 1.24;
   text-align: left;
-  color: #000000;
 }
 
 .sorting-options {
+  margin-left: 49px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
-
 .sorting-options__title {
   width: 75px;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   text-align: left;
-  color: #000000;
-  margin-left: 49px;
-  margin-bottom: 37px;
-  margin-top: 41px;
 }
 
 .sorting-options__list {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  margin-left: 40px;
+  align-items: center;
 }
 
 .sorting-options__list-item {
-  display: inline-block;
+  opacity: 0.3;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-right: 33px;
   white-space: nowrap;
-  margin:41px 33px 37px;
-}
-
-.sorting-options__list-item__button {
-    border: none;
-    opacity: 0.3;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.3);
 }
 
 .sorting-order {
+  width: 600px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  margin-right: 73px;
+}
+.sorting-order__up {
+  margin-bottom: 1px;
 }
 
 .price-range {
@@ -740,13 +737,12 @@ fieldset {
 }
 
 .results__item-type {
-  text-align: center;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
   white-space: nowrap;
-  display: flex; 
-
+  display: flex;
+  margin-left: 30px;
 }
 
 .presults__item-low-price {
@@ -791,10 +787,17 @@ fieldset {
   text-align: left;
   color: #ffffff;
 }
+.results__type-apartment{
+  width: 110px;
+}
+.resuts__item-low-price {
+  width: 142px;
+}
 
 .results__item-action__more-info {
   background-color: #81b3d2;
   width: 110px;
+  margin-left: 6px;
 }
 
 .results__item-action__book {
