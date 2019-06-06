@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Надежда Дайнеко](https://up.htmlacademy.ru/htmlcss/25/user/987553).
-* Наставник: [Максим Корелин](https://htmlacademy.ru/profile/maxzbest).
+* Наставник: [Толмац Михаил](https://htmlacademy.ru/profile/id189399).
 
 ---
 
