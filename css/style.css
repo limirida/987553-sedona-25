@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic");
-
 body {
   background-color: #f2f2f2;
   margin: 0;
@@ -290,17 +289,31 @@ a {
   margin-bottom: 12px;
 }
 
+@keyframes open {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+
 .modal {
   position: fixed;
 }
 
 .form-search {
+  display: block;
   width: 568px;
   height: 395px;
   right: 316px;
+  bottom: 78px;
+  z-index: 3;
   position: absolute;
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  animation: open 1.6s;
+}
+
+.modal-show {
+  display: none;
 }
 
 .departure {
@@ -1075,11 +1088,18 @@ a {
 .map {
   width: 100%;
   position: relative;
-  min-height: 473px;
+  z-index: 1;
+  max-height: 473px;
   background-image: url("../img/jpeg/map.jpg");
   background-color: #f2f2f2;
   padding: 0px;
   margin: 0px;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
 }
 
 .results__item-action__book:hover,
